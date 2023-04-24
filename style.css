@@ -5,34 +5,34 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.eisennhower-img-container {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.eisennhower-img-container img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.eisennhower-img-container .more-inf {
   font-family: fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .eisennhower-img-container {
     text-align: center;
   }
 }
 
-.centered-main-page-element {
+.container-for-inputs {
   display: block;
   width: 500px;
   margin: 0 auto 0;
 }
 
-.task {
+.task-line {
   width: 56%;
   display: inline-block;
   flex-grow: 1
@@ -161,11 +161,11 @@ ul li input[type=text] {
   display: none
 }
 
-ul li.editMode input[type=text] {
+ul li.line-with-edit-mode input[type=text] {
   display: inline-block;
   width: 224px
 }
 
-ul li.editMode label {
+ul li.line-with-edit-mode label {
   display: none;
 }
