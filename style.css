@@ -43,7 +43,7 @@ body {
   display: flex; 
 }
 
-ul {
+.todo-ul {
   margin: 0; 
   padding: 0px; 
 }
@@ -54,11 +54,11 @@ h3 {
 }
 
 input,
-button {
+.buttons {
   outline: none; 
 }
 
-button {
+.buttons {
   background: none; 
   border: 0px; 
   color: #888; 
@@ -68,7 +68,7 @@ button {
   cursor: pointer; 
 }
 
-button:hover {
+.buttons:hover {
   color: #3a3A3a; 
 }
 
@@ -112,7 +112,7 @@ input#new-task {
 }
 
 /* Task list */
-li {
+.todo-line {
   overflow: hidden; 
   padding: 20px 0; 
   border-bottom: 1px solid #eee; 
@@ -121,15 +121,15 @@ li {
   align-items: center; 
 }
 
-li>* {
+.todo-line>* {
   vertical-align: middle; 
 }
 
-li>input[type="checkbox"] {
+.todo-input {
   margin: 0 10px; 
 }
 
-li>label {
+.todo-label {
   padding-left: 10px; 
   box-sizing: border-box; 
   font-size: 18px; 
@@ -140,13 +140,13 @@ li>input[type="text"] {
   width: 226px; 
 }
 
-button.delete img {
+button.delete-button img {
   height: 2em; 
   transform: rotateZ(45deg); 
   transition: transform 200ms ease-in; 
 }
 
-button.delete 
+button.delete-button 
 img:hover {
   transform: rotateZ(0); 
 }
@@ -161,7 +161,10 @@ label {
 /* Edit Task */
 ul 
 li 
-input[type=text] {
+input[type=text],
+ul
+li.line-with-edit-mode
+label {
   display: none; 
 }
 
@@ -172,8 +175,3 @@ input[type=text] {
   width: 224px; 
 }
 
-ul
-li.line-with-edit-mode
-label {
-  display: none; 
-}
